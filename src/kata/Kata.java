@@ -8,16 +8,20 @@ package kata;
 import java.security.acl.Group;
 import java.util.Arrays;
 import java.util.Iterator;
-import kata.solutions.BuyCar;
-import kata.solutions.Chocolate;
-import kata.solutions.CircleSorted;
-import kata.solutions.DirReduction;
-import kata.solutions.Dubstep;
-import kata.solutions.GiftSorter;
-import kata.solutions.Groups;
-import kata.solutions.SpinWords;
-import kata.solutions.StockList;
-import kata.solutions.Triangular;
+import kata.solutions.unsolved.BuyCar;
+import kata.solutions.kyu7.Chocolate;
+import kata.solutions.kyu6.CircleSorted;
+import kata.solutions.kyu7.Collatz;
+import kata.solutions.unsolved.DirReduction;
+import kata.solutions.kyu6.Dubstep;
+import kata.solutions.kyu6.Game;
+import kata.solutions.kyu7.GiftSorter;
+import kata.solutions.unsolved.Groups;
+import kata.solutions.kyu5.Max;
+import kata.solutions.kyu6.SpinWords;
+import kata.solutions.kyu6.StockList;
+import kata.solutions.unsolved.StringMerger;
+import kata.solutions.kyu7.Triangular;
 
 /**
  *
@@ -41,10 +45,17 @@ public class Kata {
         while (it.hasNext()) {
             System.out.println(it.next());
         }*/
-        String articles[] = {"ABART 20", "CDXEF 50", "BKWRK 25", "BTSQZ 89", "DRTYM 60"};
+        /*String articles[] = {"ABART 20", "CDXEF 50", "BKWRK 25", "BTSQZ 89", "DRTYM 60"};
         String letters[] = {"A", "B", "C", "W"};
         System.out.println(StockList.stockSummary(articles, letters));
-        System.out.println(Dubstep.SongDecoder("RWUBWUBWUBLWUB"));
+        System.out.println(Dubstep.SongDecoder("RWUBWUBWUBLWUB"));*/
+        
+        //System.out.println(new Game().winner(new String[]{"A", "7", "8"}, new String[]{"K", "5", "9"}));
+        //System.out.println(StringMerger.isMerge("codewars", "code", "wars"));
+        //System.out.println(StringMerger.isMerge("Bananas from Bahamas", "Bahas", "Bananas from am"));
+        //System.out.println(Max.sequence(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}));
+        System.out.println(Collatz.conjecture(20));
+        
     }
     
 }
