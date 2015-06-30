@@ -1,0 +1,2 @@
+# kata
+Codewars exercises
