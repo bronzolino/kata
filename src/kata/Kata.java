@@ -6,8 +6,10 @@
 package kata;
 
 import java.security.acl.Group;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
+import kata.solutions.kyu5.JosephusSurvivor;
 import kata.solutions.unsolved.BuyCar;
 import kata.solutions.kyu7.Chocolate;
 import kata.solutions.kyu6.CircleSorted;
@@ -22,6 +24,9 @@ import kata.solutions.kyu6.SpinWords;
 import kata.solutions.kyu6.StockList;
 import kata.solutions.unsolved.StringMerger;
 import kata.solutions.kyu7.Triangular;
+import kata.solutions.kyu5.HumanReadableTime;
+import kata.solutions.unsolved.Josephus;
+import kata.solutions.unsolved.PigLatin;
 
 /**
  *
@@ -54,7 +59,14 @@ public class Kata {
         //System.out.println(StringMerger.isMerge("codewars", "code", "wars"));
         //System.out.println(StringMerger.isMerge("Bananas from Bahamas", "Bahas", "Bananas from am"));
         //System.out.println(Max.sequence(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}));
-        System.out.println(Collatz.conjecture(20));
+        //System.out.println(Collatz.conjecture(20));
+        //System.out.println(JosephusSurvivor.josephusSurvivor(7, 3));
+        //System.out.println(HumanReadableTime.makeReadable(86399));
+        /*Object items[] = new Object[]{"C", "o", "d", "e", "W", "a", "r", "s"};
+        System.out.println(Josephus.josephusPermutation(new ArrayList(Arrays.asList(items)),2));*/
+        PigLatin p = new PigLatin();
+        System.out.println(p.translate("ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggeg"));
+        
         
     }
     

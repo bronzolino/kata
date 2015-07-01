@@ -1,7 +1,11 @@
 package kata.solutions.unsolved;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * 
+ * Correct but Submission timed out.
  * Single Word Pig Latin 6 KYU
  * 
  * Pig Latin is an English language game where the goal is to hide the meaning 
@@ -30,8 +34,29 @@ package kata.solutions.unsolved;
 public class PigLatin {
  
     public String translate(String str) {
-        StringBuilder sbi = new StringBuilder();
-        return sbi.toString();
+        Set<Character> vowels = new HashSet<Character>();
+        vowels.add('a');
+        vowels.add('e');
+        vowels.add('i');
+        vowels.add('o');
+        vowels.add('u');
+        if (vowels.contains(str.charAt(0))) return (str + "way").toLowerCase();
+        char chars[] = str.toCharArray();
+        int len = chars.length;
+        String temp = "";
+        int point = 0;
+        boolean isAlpha = false;
+        for (int i = 0; i < len; i++) {
+            if (Character.isLetter(chars[i])) isAlpha = true;
+            if (!vowels.contains(chars[i])) temp += chars[i];
+            else {
+                point = i;
+                return (str.substring(point,len) + temp + "ay").toLowerCase();
+            }
+        }
+        if (isAlpha) {
+            return (str.substring(0,len) + "ay").toLowerCase();
+        }
+        else return null;
     }
-   
 }
