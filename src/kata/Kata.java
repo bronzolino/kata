@@ -9,6 +9,7 @@ import java.security.acl.Group;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
+import java.util.List;
 import kata.solutions.kyu5.JosephusSurvivor;
 import kata.solutions.unsolved.BuyCar;
 import kata.solutions.kyu7.Chocolate;
@@ -25,8 +26,10 @@ import kata.solutions.kyu6.StockList;
 import kata.solutions.unsolved.StringMerger;
 import kata.solutions.kyu7.Triangular;
 import kata.solutions.kyu5.HumanReadableTime;
+import kata.solutions.kyu5.CaesarCipher;
 import kata.solutions.unsolved.Josephus;
 import kata.solutions.unsolved.PigLatin;
+import kata.solutions.unsolved.Rotator;
 
 /**
  *
@@ -64,10 +67,18 @@ public class Kata {
         //System.out.println(HumanReadableTime.makeReadable(86399));
         /*Object items[] = new Object[]{"C", "o", "d", "e", "W", "a", "r", "s"};
         System.out.println(Josephus.josephusPermutation(new ArrayList(Arrays.asList(items)),2));*/
-        PigLatin p = new PigLatin();
-        System.out.println(p.translate("ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggeg"));
-        
-        
+        /*Rotator rotator = new Rotator();
+        Object data[] = rotator.rotate(new Object[]{1, 2, 3, 4, 5}, 2);
+        for (int i = 0; i < data.length; i++) {
+            System.out.print(data[i] + " ");
+        }*/
+        int shift = 1;
+        String plainText = "I should have known that you would have a perfect answer for me!!!";
+        System.out.println(plainText);
+        List<String>  moved = CaesarCipher.movingShift(plainText, shift);
+        System.out.println(moved);
+        String demoved = CaesarCipher.demovingShift(moved, shift);
+        System.out.println(demoved);
     }
     
 }
