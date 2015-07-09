@@ -44,14 +44,12 @@ public class PigLatin {
         char chars[] = str.toCharArray();
         int len = chars.length;
         String temp = "";
-        int point = 0;
-        boolean isAlpha = false;
+        boolean isAlpha = true;
         for (int i = 0; i < len; i++) {
-            if (Character.isLetter(chars[i])) isAlpha = true;
+            if (!Character.isLetter(chars[i])) isAlpha = false;
             if (!vowels.contains(chars[i])) temp += chars[i];
-            else {
-                point = i;
-                return (str.substring(point,len) + temp + "ay").toLowerCase();
+            else if (isAlpha){
+                return (str.substring(i,len) + temp + "ay").toLowerCase();
             }
         }
         if (isAlpha) {
