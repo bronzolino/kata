@@ -31,6 +31,7 @@ import kata.solutions.unsolved.Josephus;
 import kata.solutions.unsolved.PigLatin;
 import kata.solutions.unsolved.Rotator;
 import kata.solutions.kyu6.Xbonacci;
+import kata.solutions.kyu7.EANValidator;
 
 /**
  *
@@ -81,9 +82,10 @@ public class Kata {
         String demoved = CaesarCipher.demovingShift(moved, shift);
         System.out.println(demoved);*/
         //System.out.println(PigLatin.class.newInstance().translate("xyze"));
-        Xbonacci variabonacci = new Xbonacci();
+        /*Xbonacci variabonacci = new Xbonacci();
         double serie[] = variabonacci.tribonacci(new double []{1,1,1},10);
-        for (int i = 0; i < serie.length; i++) System.out.print((int)serie[i] + ",");
+        for (int i = 0; i < serie.length; i++) System.out.print((int)serie[i] + ",");*/
+        System.out.print(EANValidator.validate("9783827317100"));
         
     }
     
