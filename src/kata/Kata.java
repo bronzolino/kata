@@ -30,6 +30,7 @@ import kata.solutions.kyu5.CaesarCipher;
 import kata.solutions.unsolved.Josephus;
 import kata.solutions.unsolved.PigLatin;
 import kata.solutions.unsolved.Rotator;
+import kata.solutions.kyu6.Xbonacci;
 
 /**
  *
@@ -40,7 +41,7 @@ public class Kata {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InstantiationException, IllegalAccessException {
         /*System.out.println(Chocolate.breakChocolate(7, 7));
         int[] numbers ={9,10,14,12};
         CircleSorted cs = new CircleSorted();
@@ -72,13 +73,18 @@ public class Kata {
         for (int i = 0; i < data.length; i++) {
             System.out.print(data[i] + " ");
         }*/
-        int shift = 1;
+        /*int shift = 1;
         String plainText = "I should have known that you would have a perfect answer for me!!!";
         System.out.println(plainText);
         List<String>  moved = CaesarCipher.movingShift(plainText, shift);
         System.out.println(moved);
         String demoved = CaesarCipher.demovingShift(moved, shift);
-        System.out.println(demoved);
+        System.out.println(demoved);*/
+        //System.out.println(PigLatin.class.newInstance().translate("xyze"));
+        Xbonacci variabonacci = new Xbonacci();
+        double serie[] = variabonacci.tribonacci(new double []{1,1,1},10);
+        for (int i = 0; i < serie.length; i++) System.out.print((int)serie[i] + ",");
+        
     }
     
 }

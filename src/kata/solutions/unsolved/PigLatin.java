@@ -47,10 +47,8 @@ public class PigLatin {
         boolean isAlpha = true;
         for (int i = 0; i < len; i++) {
             if (!Character.isLetter(chars[i])) isAlpha = false;
-            if (!vowels.contains(chars[i])) temp += chars[i];
-            else if (isAlpha){
-                return (str.substring(i,len) + temp + "ay").toLowerCase();
-            }
+            temp += chars[i];
+            if (vowels.contains(chars[i])) return (str.substring(i + 1,len) + temp + "ay").toLowerCase();
         }
         if (isAlpha) {
             return (str.substring(0,len) + "ay").toLowerCase();
