@@ -37,6 +37,9 @@ import kata.solutions.kyu6.TriangleNumbers;
 import kata.solutions.unsolved.Converter;
 import kata.solutions.kyu7.Factorial;
 import kata.solutions.kyu8.God;
+import kata.solutions.kyu8.KataExampleTwist;
+import kata.solutions.unsolved.Bio;
+import kata.solutions.unsolved.Circle;
 
 /**
  *
@@ -96,6 +99,10 @@ public class Kata {
         //System.out.println(TriangleNumbers.isTriangleNumber(125250));
         //System.out.println(Converter.mpgToKPM(880));
         //System.out.println(Factorial.class.newInstance().factorial(42));
+        //System.out.println(KataExampleTwist.kataExampleTwist());
+        //System.out.println(Bio.class.newInstance().dnaToRna("TTTT"));
+        System.out.println(Circle.area(3));
+        
         
     }
     
