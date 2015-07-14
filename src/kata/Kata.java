@@ -32,6 +32,11 @@ import kata.solutions.unsolved.PigLatin;
 import kata.solutions.unsolved.Rotator;
 import kata.solutions.kyu6.Xbonacci;
 import kata.solutions.kyu7.EANValidator;
+import kata.solutions.kyu8.Ghost;
+import kata.solutions.kyu6.TriangleNumbers;
+import kata.solutions.unsolved.Converter;
+import kata.solutions.kyu7.Factorial;
+import kata.solutions.kyu8.God;
 
 /**
  *
@@ -85,7 +90,12 @@ public class Kata {
         /*Xbonacci variabonacci = new Xbonacci();
         double serie[] = variabonacci.tribonacci(new double []{1,1,1},10);
         for (int i = 0; i < serie.length; i++) System.out.print((int)serie[i] + ",");*/
-        System.out.print(EANValidator.validate("9783827317100"));
+        //System.out.print(EANValidator.validate("9783827317100"));
+        //System.out.print(Ghost.class.newInstance().getColor());
+        //System.out.print(kata.solutions.kyu6.Diamond.print(5));
+        //System.out.println(TriangleNumbers.isTriangleNumber(125250));
+        //System.out.println(Converter.mpgToKPM(880));
+        //System.out.println(Factorial.class.newInstance().factorial(42));
         
     }
     
