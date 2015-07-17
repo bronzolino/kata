@@ -1,4 +1,4 @@
-package kata.solutions.unsolved;
+package kata.solutions.kyu8;
 
 /**
  * DNA to RNA Conversion 8 KYU

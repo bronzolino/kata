@@ -38,8 +38,17 @@ import kata.solutions.unsolved.Converter;
 import kata.solutions.kyu7.Factorial;
 import kata.solutions.kyu8.God;
 import kata.solutions.kyu8.KataExampleTwist;
-import kata.solutions.unsolved.Bio;
+import kata.solutions.kyu8.Bio;
 import kata.solutions.unsolved.Circle;
+import kata.solutions.kyu7.SequenceSum;
+import kata.solutions.kyu7.SquareDigit;
+import kata.solutions.kyu7.BatmanQuotes;
+import kata.solutions.kyu7.WordSearch;
+import kata.solutions.kyu7.Square;
+import kata.solutions.kyu7.CompleteThePattern;
+import kata.solutions.kyu7.BinaryCalculator;
+import kata.solutions.unsolved.Reverse;
+import kata.solutions.unsolved.ReverseLonger;
 
 /**
  *
@@ -101,9 +110,19 @@ public class Kata {
         //System.out.println(Factorial.class.newInstance().factorial(42));
         //System.out.println(KataExampleTwist.kataExampleTwist());
         //System.out.println(Bio.class.newInstance().dnaToRna("TTTT"));
-        System.out.println(Circle.area(3));
-        
+        //System.out.println(Circle.area(3));
+        /*int serie[] = SequenceSum.sumOfN(-5);
+        for (int i : serie) System.out.println(i + ",");*/
+        //System.out.println(SquareDigit.class.newInstance().squareDigits(9119));
+        /*String[] quotes = { "Quote Hidden in example test","Holy haberdashery, Batman!","Quote Hidden in example test"};
+        System.out.println(BatmanQuotes.getQuote(quotes, "Rob1n"));*/
+        /*String[] test1 = {"home", "milk", "Mercury", "fish"};
+        for (String s : WordSearch.findWord("me", test1)) System.out.println(s);*/
+        //System.out.println(Square.isSquare(164207796));
+        //System.out.println("Reversed " + Reverse.class.newInstance().reverse("YC"));
+        //System.out.println(CompleteThePattern.pattern(5));
+        //System.out.println(BinaryCalculator.calculate("1", "1", "add"));
+        System.out.println(ReverseLonger.shorterReverseLonger("2f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a0459", "67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b") + "\nbauollehbau");
         
     }
-    
 }
