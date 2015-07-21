@@ -48,6 +48,7 @@ import kata.solutions.kyu7.Square;
 import kata.solutions.kyu7.CompleteThePattern;
 import kata.solutions.kyu7.BinaryCalculator;
 import kata.solutions.kyu6.PlayPass;
+import kata.solutions.kyu8.BrokenSequence;
 import kata.solutions.unsolved.Reverse;
 import kata.solutions.unsolved.ReverseLonger;
 
@@ -124,7 +125,8 @@ public class Kata {
         //System.out.println(CompleteThePattern.pattern(5));
         //System.out.println(BinaryCalculator.calculate("1", "1", "add"));
         //System.out.println(ReverseLonger.shorterReverseLonger("2f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a0459", "67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b") + "\nbauollehbau");
-        System.out.println(PlayPass.playPass("IN 2012 TWO CAMBRIDGE UNIVERSITY RESEARCHERS ANALYSED PASSPHRASES FROM THE AMAZON PAY SYSTEM...", 1));
+        //System.out.println(PlayPass.playPass("IN 2012 TWO CAMBRIDGE UNIVERSITY RESEARCHERS ANALYSED PASSPHRASES FROM THE AMAZON PAY SYSTEM...", 1));
+        System.out.println(BrokenSequence.class.newInstance().findMissingNumber("2 3 4 5"));
         
     }
 }
