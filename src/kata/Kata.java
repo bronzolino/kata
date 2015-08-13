@@ -50,6 +50,8 @@ import kata.solutions.kyu7.BinaryCalculator;
 import kata.solutions.kyu6.PlayPass;
 import kata.solutions.kyu8.BrokenSequence;
 import kata.solutions.kyu5.PaginationHelper;
+import kata.solutions.kyu7.Block;
+import kata.solutions.unsolved.Powers;
 import kata.solutions.unsolved.Reverse;
 import kata.solutions.unsolved.ReverseLonger;
 
@@ -128,7 +130,7 @@ public class Kata {
         //System.out.println(ReverseLonger.shorterReverseLonger("2f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a04592f63a9e0-3269-4968-bc4c-5ddee96a0459", "67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b67419887-79e8-4d90-9b24-2f6d1af37e8b") + "\nbauollehbau");
         //System.out.println(PlayPass.playPass("IN 2012 TWO CAMBRIDGE UNIVERSITY RESEARCHERS ANALYSED PASSPHRASES FROM THE AMAZON PAY SYSTEM...", 1));
         //System.out.println(BrokenSequence.class.newInstance().findMissingNumber("2 3 4 5"));
-        System.out.println("PaginationHelper<Character> helper = new PaginationHelper(Arrays.asList('a', 'b', 'c', 'd', 'e', 'f'), 4);");
+        /*System.out.println("PaginationHelper<Character> helper = new PaginationHelper(Arrays.asList('a', 'b', 'c', 'd', 'e', 'f'), 4);");
         PaginationHelper<Character> helper = new PaginationHelper(Arrays.asList('a', 'b', 'c', 'd', 'e', 'f'), 4);
         System.out.println("helper.pageCount() " + helper.pageCount() + " == 2");
         System.out.println("helper.itemCount() " + helper.itemCount() + " == 6");
@@ -138,7 +140,12 @@ public class Kata {
         System.out.println("helper.pageIndex(5) " + helper.pageIndex(5) + " == 1");
         System.out.println("helper.pageIndex(2) " + helper.pageIndex(2) + " == 0");
         System.out.println("helper.pageIndex(20) " + helper.pageIndex(20) + " == -1");
-        System.out.println("helper.pageIndex(-10) " + helper.pageIndex(-10) + " == -1");
+        System.out.println("helper.pageIndex(-10) " + helper.pageIndex(-10) + " == -1");*/
+        
+        /*Block b = new Block(new int[]{2,4,6});
+        System.out.println("volume " + b.getVolume());
+        System.out.println("area " + b.getSurfaceArea());*/
+        System.out.println("Torna 32 = " + Powers.powers(new int[]{1,2,3,4,5}));
         
     }
 }
