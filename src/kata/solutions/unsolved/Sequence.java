@@ -30,6 +30,12 @@ package kata.solutions.unsolved;
  */
 public class Sequence {
     public static int nthterm(int first, int n, int c) {
-        return 0;
+        int lastTerm = 0;
+        int pos = 0;
+        for (int i = 0; i < n; i++) {
+            pos = (i - 1) * c;
+            System.out.println("POS " + pos);
+        }
+        return pos;
     }
 }

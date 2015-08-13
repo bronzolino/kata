@@ -18,7 +18,6 @@ package kata.solutions.unsolved;
  */
 public class Converter {
     public static float mpgToKPM(final float mpg) {
-        
         return (float) ((Math.round((int)(mpg * 0.354 * 100.0))) / 100.0);
     }
 }

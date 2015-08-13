@@ -5,6 +5,7 @@
  */
 package kata;
 
+import java.beans.PersistenceDelegate;
 import java.security.acl.Group;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -54,6 +55,8 @@ import kata.solutions.kyu7.Block;
 import kata.solutions.unsolved.Powers;
 import kata.solutions.unsolved.Reverse;
 import kata.solutions.unsolved.ReverseLonger;
+import kata.solutions.unsolved.Sequence;
+import kata.solutions.kyu6.Persist;
 
 /**
  *
@@ -145,7 +148,9 @@ public class Kata {
         /*Block b = new Block(new int[]{2,4,6});
         System.out.println("volume " + b.getVolume());
         System.out.println("area " + b.getSurfaceArea());*/
-        System.out.println("Torna 32 = " + Powers.powers(new int[]{1,2,3,4,5}));
+        //System.out.println("Torna 32 = " + Powers.powers(new int[]{1,2,3,4,5}));
+        //System.out.println(Sequence.nthterm(0, 99, 1));
+        System.out.println(Persist.persistence(999));
         
     }
 }
