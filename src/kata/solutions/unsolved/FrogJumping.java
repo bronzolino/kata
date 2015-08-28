@@ -39,11 +39,13 @@ public class FrogJumping {
         int jumps = 0;
         int position = 0;
         int len = a.length;
-        for (int i = 1; i < len; i++) {
+        for (int i = 0; i < len; i++) {
             position += a[i];
             jumps++;
             System.out.println("[ " + i + " ] Sono alla posizione " + position + " dopo " + jumps + " salto");
-            if (position >= len) return jumps;
+            if (position > len) {
+                return jumps;
+            }
         }
         return -1;
     }

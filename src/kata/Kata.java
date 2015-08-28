@@ -155,8 +155,8 @@ public class Kata {
         //System.out.println(Sequence.nthterm(0, 99, 1));
         //System.out.println(Persist.persistence(999));
         //System.out.println(WeightSort.orderWeight("2000 10003 1234000 44444444 9999 11 11 22 123"));
-        //System.out.println(FrogJumping.solution(new int[]{1, 2, 1, 2, -3, -4}));
-        System.out.println(Lucas.lucasnum(-10));
+        System.out.println(FrogJumping.solution(new int[]{1, 2, 1, 2, -3, -4}));
+        //System.out.println(Lucas.lucasnum(-10));
         
     }
 }
