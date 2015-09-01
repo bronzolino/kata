@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package kata.solutions.unsolved;
+package kata.solutions.kyu6;
 
 /**
  *
@@ -34,18 +29,18 @@ package kata.solutions.unsolved;
  */
 public class FrogJumping {
     public static int solution(int[] a) {
-        System.out.println("Ho un array di " + a.length);
-        System.out.println(a);
         int jumps = 0;
         int position = 0;
         int len = a.length;
+        boolean first = true;
         for (int i = 0; i < len; i++) {
-            position += a[i];
-            jumps++;
-            System.out.println("[ " + i + " ] Sono alla posizione " + position + " dopo " + jumps + " salto");
-            if (position > len) {
-                return jumps;
+            if (first) {
+                position += a[i];
+                first = false;
             }
+            else position += a[position];
+            jumps++;
+            if (position >= len || position < 0) return jumps;
         }
         return -1;
     }

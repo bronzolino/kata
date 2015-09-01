@@ -58,7 +58,7 @@ import kata.solutions.unsolved.ReverseLonger;
 import kata.solutions.unsolved.Sequence;
 import kata.solutions.kyu6.Persist;
 import kata.solutions.kyu5.WeightSort;
-import kata.solutions.unsolved.FrogJumping;
+import kata.solutions.kyu6.FrogJumping;
 import kata.solutions.unsolved.Lucas;
 
 /**
