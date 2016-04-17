@@ -1,4 +1,4 @@
-package kata.solutions.unsolved;
+package kata.solutions.kyu6;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -34,22 +34,49 @@ import java.util.Set;
 public class PigLatin {
  
     public String translate(String str) {
+        str = str.toLowerCase();
         Set<Character> vowels = new HashSet<Character>();
         vowels.add('a');
         vowels.add('e');
         vowels.add('i');
         vowels.add('o');
         vowels.add('u');
-        if (vowels.contains(str.charAt(0))) return (str + "way").toLowerCase();
+        
+        /**
+         * 1) The word starts with a vowel -> return the original string plus way
+         */
+        if (vowels.contains(str.charAt(0))) {
+            return (str + "way").toLowerCase();
+        }
+        
+        /**
+         * 3) If input string has any non-alpha characters, the function must 
+         * return None,
+         */
+        boolean hasNumbers = str.chars().filter(ch -> Character.isDigit(ch)).count() > 0;
+        if (hasNumbers) {
+            return null;
+        }
+        
+        /**
+         * 2) The word starts with a consonant -> move consonants from the beginning of
+         * the word to the end of the word until the first vowel, then return it plus ay
+         */
         char chars[] = str.toCharArray();
         int len = chars.length;
         String temp = "";
         boolean isAlpha = true;
         for (int i = 0; i < len; i++) {
-            if (!Character.isLetter(chars[i])) isAlpha = false;
+            char currentChar = chars[i];
+            if (!Character.isLetter(currentChar)) isAlpha = false;
+            if (vowels.contains(currentChar)) {
+                return (currentChar + str.substring(i + 1,len) + temp + "ay").toLowerCase();
+            }
             temp += chars[i];
-            if (vowels.contains(chars[i])) return (str.substring(i + 1,len) + temp + "ay").toLowerCase();
         }
+        /**
+         * 5) The input string has no vowels -> return the original string plus ay
+         */
         if (isAlpha) {
             return (str.substring(0,len) + "ay").toLowerCase();
         }

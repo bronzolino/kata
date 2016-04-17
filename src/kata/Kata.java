@@ -29,7 +29,7 @@ import kata.solutions.kyu7.Triangular;
 import kata.solutions.kyu5.HumanReadableTime;
 import kata.solutions.kyu5.CaesarCipher;
 import kata.solutions.unsolved.Josephus;
-import kata.solutions.unsolved.PigLatin;
+import kata.solutions.kyu6.PigLatin;
 import kata.solutions.unsolved.Rotator;
 import kata.solutions.kyu6.Xbonacci;
 import kata.solutions.kyu7.EANValidator;
@@ -110,7 +110,7 @@ public class Kata {
         System.out.println(moved);
         String demoved = CaesarCipher.demovingShift(moved, shift);
         System.out.println(demoved);*/
-        //System.out.println(PigLatin.class.newInstance().translate("xyze"));
+        //System.out.println(PigLatin.class.newInstance().translate("tes3t5"));
         /*Xbonacci variabonacci = new Xbonacci();
         double serie[] = variabonacci.tribonacci(new double []{1,1,1},10);
         for (int i = 0; i < serie.length; i++) System.out.print((int)serie[i] + ",");*/
