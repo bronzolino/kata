@@ -40,7 +40,7 @@ import kata.solutions.kyu7.Factorial;
 import kata.solutions.kyu8.God;
 import kata.solutions.kyu8.KataExampleTwist;
 import kata.solutions.kyu8.Bio;
-import kata.solutions.unsolved.Circle;
+import kata.solutions.kyu7.Circle;
 import kata.solutions.kyu7.SequenceSum;
 import kata.solutions.kyu7.SquareDigit;
 import kata.solutions.kyu7.BatmanQuotes;
@@ -159,7 +159,7 @@ public class Kata {
         //System.out.println(FrogJumping.solution(new int[]{1, 2, 1, 2, -3, -4}));
         //System.out.println(Lucas.lucasnum(-10));
         
-        System.out.println(Scramblies.scramble("rkqodlw","world"));
+        /*System.out.println(Scramblies.scramble("rkqodlw","world"));
         System.out.println(Scramblies.scramble("cedewaraaossoqqyt","codewars"));
         System.out.println(Scramblies.scramble("katas","steak"));
         System.out.println(Scramblies.scramble("scriptjavx","javascript"));
@@ -168,7 +168,7 @@ public class Kata {
         System.out.println(Scramblies.scramble("javscripts","javascript"));
         System.out.println(Scramblies.scramble("aabbcamaomsccdd","commas"));
         System.out.println(Scramblies.scramble("commas","commas"));
-        System.out.println(Scramblies.scramble("sammoc","commas"));
+        System.out.println(Scramblies.scramble("sammoc","commas"));*/
        
         /**
          * testing(Scramblies.scramble("rkqodlw","world"), true);

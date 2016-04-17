@@ -1,4 +1,4 @@
-package kata.solutions.unsolved;
+package kata.solutions.kyu7;
 
 /**
  * Area of a Circle 7 KYU
@@ -18,6 +18,6 @@ package kata.solutions.unsolved;
 public class Circle {
     public static double area(double radius) {
         if (radius <= 0) throw new IllegalArgumentException();
-        else return ((int)(2 * radius * Math.PI * 100)) / 100;
+        else return radius * radius * Math.PI;
     }
 }
