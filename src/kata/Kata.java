@@ -60,6 +60,7 @@ import kata.solutions.kyu6.Persist;
 import kata.solutions.kyu5.WeightSort;
 import kata.solutions.kyu6.FrogJumping;
 import kata.solutions.unsolved.Lucas;
+import kata.solutions.kyu5.Scramblies;
 
 /**
  *
@@ -155,8 +156,31 @@ public class Kata {
         //System.out.println(Sequence.nthterm(0, 99, 1));
         //System.out.println(Persist.persistence(999));
         //System.out.println(WeightSort.orderWeight("2000 10003 1234000 44444444 9999 11 11 22 123"));
-        System.out.println(FrogJumping.solution(new int[]{1, 2, 1, 2, -3, -4}));
+        //System.out.println(FrogJumping.solution(new int[]{1, 2, 1, 2, -3, -4}));
         //System.out.println(Lucas.lucasnum(-10));
         
+        System.out.println(Scramblies.scramble("rkqodlw","world"));
+        System.out.println(Scramblies.scramble("cedewaraaossoqqyt","codewars"));
+        System.out.println(Scramblies.scramble("katas","steak"));
+        System.out.println(Scramblies.scramble("scriptjavx","javascript"));
+        System.out.println(Scramblies.scramble("scriptingjava","javascript"));
+        System.out.println(Scramblies.scramble("scriptsjava","javascripts"));
+        System.out.println(Scramblies.scramble("javscripts","javascript"));
+        System.out.println(Scramblies.scramble("aabbcamaomsccdd","commas"));
+        System.out.println(Scramblies.scramble("commas","commas"));
+        System.out.println(Scramblies.scramble("sammoc","commas"));
+       
+        /**
+         * testing(Scramblies.scramble("rkqodlw","world"), true);
+        testing(Scramblies.scramble("cedewaraaossoqqyt","codewars"),true);
+        testing(Scramblies.scramble("katas","steak"),false);
+        testing(Scramblies.scramble("scriptjavx","javascript"),false);
+        testing(Scramblies.scramble("scriptingjava","javascript"),true);
+        testing(Scramblies.scramble("scriptsjava","javascripts"),true);
+        testing(Scramblies.scramble("javscripts","javascript"),false);
+        testing(Scramblies.scramble("aabbcamaomsccdd","commas"),true);
+        testing(Scramblies.scramble("commas","commas"),true);
+        testing(Scramblies.scramble("sammoc","commas"),true);
+         */
     }
 }
