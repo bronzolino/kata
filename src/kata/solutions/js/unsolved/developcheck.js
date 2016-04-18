@@ -5,9 +5,6 @@
  */
 
 function develop() {
-    var circleArea = function(radius) {
-        return "area di " + radius;
-    };
-    
-    alert(circleArea(1));
+    alert("La funzione di test di develop");
+    Console.log("La funzione di test di develop");
 }
