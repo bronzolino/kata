@@ -1,4 +1,3 @@
 # kata
 Codewars exercises
 
---
